@@ -1,0 +1,133 @@
+.header {
+    margin-top: 20px;
+
+    &__btn {
+        margin-top: -10px;
+        border: none;
+        background: none;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        top: 560px;
+        left: 300px;
+        position: fixed;
+        display: none;
+    }
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 215px;
+    height: 1088px;
+    border-radius: 8px;
+
+    &__list {
+        width: 215px;
+        height: 0px;
+        margin-left: -30px;
+    }
+
+    &__list::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__item {
+        margin-bottom: 28px;
+    }
+
+    &__itemms {
+        margin-bottom: 60px;
+    }
+
+    &__items {
+        margin-top: 29px;
+    }
+
+    &__linkk {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        padding-left: 14px;
+        color: #FF0000;
+    }
+
+    &__link {
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        padding-left: 14px;
+        color: #898989;
+    }
+
+    &__heading {
+        margin: 0;
+        padding: 0;
+        padding-top: 58px;
+        padding-bottom: 30px;
+        font-family: 'Roboto';
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    &__itemm {
+        margin-bottom: 23px;
+    }
+
+    &__iteme {
+        margin-top: 104px;
+    }
+
+    &__exit {
+        border: none;
+        background: none;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+}
+
+.info {
+    display: block;
+}
+
+@media only screen and (max-width: 970px) {
+    .header__btn {
+        margin-right: -4px;
+    }
+
+    .nav__exit {
+        margin-left: 0px;
+    }
+
+    .nav {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .nav {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__list {
+        display: flex;
+    }
+}
